@@ -46,7 +46,7 @@ The critic network takes the state and action vectors as input, and returns a sc
 
 ### Results
 
-The 2 agents were trained for 2000 episodes. An average score greater than 0.5 over the last 100 episodes was first obtained at episode 1025 (average = 0.52). The best average score of 1.61 was obtained after 1567 episodes (averaged over episodes 1468 to 1567). The actor and critic weights corresponding to these agents is stored in the code folder. Although the average exceeds the target +0.5, it is clear from the plot below that there is a lot of variation in the score from episode to episode. The dashed vertical line indicates the point at which the enviroment was considered solved. The dashed horizontal lines indicate the target threshold (in green) and the maximum score obtained over the 2000 episodes (navy).
+The 2 agents were trained for 10000 episodes. An average score greater than 0.5 over the last 360 episodes was obtained. The best average score of 1.30 was obtained after 220 episodes. The actor and critic weights corresponding to these agents is stored acto_tennis.pth and cretic_tennis.pth. Although the average exceeds the target +0.5, it is clear from the plot below that there is a lot of variation in the score from episode to episode. The dashed vertical line indicates the point at which the enviroment was considered solved. The dashed horizontal lines indicate the target threshold (in green) and the maximum score obtained over the 2000 episodes (navy).
 
 ![results.png](results.png)
 
