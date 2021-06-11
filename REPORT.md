@@ -1,5 +1,4 @@
-## Udacity Deep Reinforcement Learning Nanodegree 
-## Project 3: Collaboration & Competition
+## Project 3: Multi-agent RL
 
 ### Description of Implementation
 
