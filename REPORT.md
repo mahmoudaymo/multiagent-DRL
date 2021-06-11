@@ -29,11 +29,11 @@ This project considers a multi-agent implementation of the DDPG algorithm.
 #### Agent Hyperparameters
 
 - `GAMMA = 0.99` is the discount factor that controls how far-sighted each agent is with respect to rewards. `GAMMA = 0` implies that only the immediate reward is important and `GAMMA = 1.0` implies that all rewards are equally important, irrespective whether they are realised soon and much later
-- `TAU = 0.001` controls the degree to which the target network parameters are adjusted toward those of the local network. `TAU = 0` implies no adjustment (the target network does not ever learn) and `TAU = 1` implies that the target network parameters are completely replaced with the local network parameters
-- `LR_ACTOR = 0.001` is the learning rate for the gradient descent update of the local actor weights
-- `LR_CRITIC = 0.001` is the learning rate for the gradient descent update of the local critic weights
-- `BUFFER_SIZE = 100000` is the number of experience tuples `(state, action, reward, next_state, done)` that are stored in the replay buffer and avaiable for learning
-- `BATCH_SIZE = 128` is the number of tuples that are sampled from the replay buffer for learning
+- `TAU = 0.002` controls the degree to which the target network parameters are adjusted toward those of the local network. `TAU = 0` implies no adjustment (the target network does not ever learn) and `TAU = 1` implies that the target network parameters are completely replaced with the local network parameters
+- `LR_ACTOR = 0.0001` is the learning rate for the gradient descent update of the local actor weights
+- `LR_CRITIC = 0.0001` is the learning rate for the gradient descent update of the local critic weights
+- `BUFFER_SIZE = 1000000` is the number of experience tuples `(state, action, reward, next_state, done)` that are stored in the replay buffer and avaiable for learning
+- `BATCH_SIZE = 256` is the number of tuples that are sampled from the replay buffer for learning
 - During training, the predicted actions were corrupted with noise based on an Ornstein-Uhlenbeck process with mean `mu = 0`, mean reversion rate `theta = 0.15` and variance `sigma = 0.1` 
 
 
